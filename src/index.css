@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@layer utilities{
+    .container {
+        height: 800px
+    }
+}
