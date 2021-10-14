@@ -1,10 +1,10 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGuitar, faBars} from '@fortawesome/free-solid-svg-icons'
-import Header from "./component/Header";
-import Featured from "./component/featured";
+import Header from "./component/layout/Header";
+import Featured from "./component/featured/Featured";
 import  './resources/style.css'
-import Footer from "./component/Footer";
+import Footer from "./component/layout/Footer";
 
 library.add(faGuitar, faBars)
 

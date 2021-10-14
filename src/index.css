@@ -13,4 +13,10 @@
     .bg-dark {
         background-color: #363636;
     }
+    .mt-18 {
+        margin-top: 4.5rem;
+    }
+    .lh-80 {
+        line-height: 25px;
+    }
 }

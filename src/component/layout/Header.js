@@ -14,21 +14,23 @@ const Header = () => {
                     color='white' 
                     className='m-1'/>
                 <table className='m-2' >
-                    <tr>
-                        <h1 className='text-white text-3xl font-Righteous font-bold'>
-                            The venue
-                        </h1>
-                    </tr>
-                    <tr>
-                        <h1 className='text-white text-sm font-roboto font-bold'>
-                            Musical Events
-                        </h1>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td className='text-white text-3xl font-Righteous font-bold'>
+                                The venue
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className='text-white text-sm font-roboto font-bold'>
+                                Musical Events
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div className='flex flex-grow justify-end'>
                 <button className='mr-8 bg-transparent' 
-                    //essentially a css::hover effect         
+                    //essentially a css::hover effect using state hooks        
                     onMouseOver={() => setOver(true)}
                     onMouseLeave={() => setOver(false)}>
                     <FontAwesomeIcon 
@@ -36,8 +38,7 @@ const Header = () => {
                         size='2x'
                         icon='bars'
                         //ternary operator to create effect based on mouse hover event
-                        style = {over ? { color: 'orange'} : {}} 
-                        flash/>
+                        style = {over ? { color: 'orange'} : {}} />
                 </button>
             </div>
         </nav>

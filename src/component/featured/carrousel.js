@@ -19,10 +19,10 @@ const Carrousel = () => {
     }
     
     return (
-           <Slider {...settings}>
-                <img src={grande_1} alt=''></img>
-                <img src={grande_2}  alt=''></img>
-                <img src={grande_3}  alt=''></img>
+           <Slider {...settings} >
+                <img style={{height: `${window.innerHeight}`}} src={grande_1} alt=''></img>
+                <img style={{height: `${window.innerHeight}`}}  src={grande_2} alt=''></img>
+                <img style={{height: `${window.innerHeight}`}} src={grande_3}  alt=''></img>
            </Slider>
     );
 }
