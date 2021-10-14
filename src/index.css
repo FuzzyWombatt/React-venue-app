@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
 @layer utilities{
     .container {
-        height: 800px
+        height: 800px;
+        overflow: hidden
+    }
+    .bg-dark {
+        background-color: #363636;
     }
 }

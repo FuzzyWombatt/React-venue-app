@@ -1,12 +1,12 @@
 import React from 'react'
-import { Menu } from 'react-bulma-components';
+
 
 const Sidedrawer = (props) =>{
     
     return (
-        <Menu>
-            
-        </Menu>
+        <div>
+        
+        </div>
     )
 }
 export default Sidedrawer;

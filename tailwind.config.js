@@ -8,8 +8,16 @@ module.exports = {
         '150' : '150px',
       },
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif']
-      }
+        'roboto': ['Roboto', 'sans-serif'],
+        'Righteous': ['Righteous', 'cursive']
+      },
+      height: {
+        '800' : '800px',
+      },
+      marginTop: {
+        '18' : '18rem',
+      },
+
     },
   },
   variants: {

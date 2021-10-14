@@ -1,69 +1,46 @@
 import React, {useState, useEffect} from "react";
-import { Navbar, Heading} from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-//this form will have a different coding style as a means of testing how I like it and its easer of use
 
 const Header = () => {
   const [open, setOpen] = useState(false)
   const [over, setOver] = useState(false)
   return (
-    <Navbar 
-        fixed='top' 
-        backgroundColor='dark'
-    >
-            <Navbar.Brand 
-                alignItems='center'
-            >
+    <nav className='bg-dark flex flex-row fixed z-10 w-screen'>
+            <div className='items-center flex flex-row'>
                 <FontAwesomeIcon 
                     icon='guitar' 
                     size="3x" 
                     color='white' 
-                    style={{margin: '.25rem'}}
-                />
-                <table 
-                    style={{margin: ".5rem"}}
-                >
+                    className='m-1'/>
+                <table className='m-2' >
                     <tr>
-                        <Heading 
-                            textColor='white' 
-                            style={{fontFamily: 'righteous, cursive',
-                                    fontWeight: "bold"}}
-                        >
+                        <h1 className='text-white text-3xl font-Righteous font-bold'>
                             The venue
-                        </Heading>
+                        </h1>
                     </tr>
                     <tr>
-                        <Heading 
-                            size="6" 
-                            textColor='white' 
-                            style={{fontFamily: "roboto"}}
-                        >
+                        <h1 className='text-white text-sm font-roboto font-bold'>
                             Musical Events
-                        </Heading>
+                        </h1>
                     </tr>
                 </table>
-            </Navbar.Brand>
-            <Navbar.Menu justifyContent='right' alignItems='center'>
-                <button 
-                    style={{backgroundColor: 'transparent',
-                            border: 'transparent',
-                            marginRight: '1rem'}}
+            </div>
+            <div className='flex flex-grow justify-end'>
+                <button className='mr-8 bg-transparent' 
                     //essentially a css::hover effect         
                     onMouseOver={() => setOver(true)}
-                    onMouseLeave={() => setOver(false)}
-                >
+                    onMouseLeave={() => setOver(false)}>
                     <FontAwesomeIcon 
                         color='white' 
                         size='2x'
                         icon='bars'
                         //ternary operator to create effect based on mouse hover event
                         style = {over ? { color: 'orange'} : {}} 
-                        flash
-                    />
+                        flash/>
                 </button>
-            </Navbar.Menu>
-    </Navbar>
+            </div>
+        </nav>
   );
 }
 
