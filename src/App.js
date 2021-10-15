@@ -1,14 +1,13 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGuitar, faBars} from '@fortawesome/free-solid-svg-icons'
+import { faGuitar, faBars, faTicketAlt, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 import Header from "./component/layout/Header";
 import Featured from "./component/featured/Featured";
-import  './resources/style.css'
 import Footer from "./component/layout/Footer";
 import VenueNfo from './component/venue_info/VenueNfo'
-
-library.add(faGuitar, faBars)
+//solid icons seem to work the best with this method, regular tend to never show
+library.add(faGuitar, faBars, faTicketAlt, faMapMarkerAlt);
 
 const App = () => {
   return (

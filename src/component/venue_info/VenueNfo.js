@@ -1,21 +1,42 @@
 import React from 'react'
 import { Zoom } from 'react-awesome-reveal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+
 
 const VenueNfo = () => {
     return (
-        <div className='flex ptb-170 content-center bg-dark text-white '>
-            <Zoom className='flex w-1/2 justify-center'>
-                    <div className='border-2 w-300 margin-auto p-1 '>
-                        <div className='relative pr-5 pl-5 w-1/2 ease-500 border-2'>
-                                Penis master galore
+        <div className='flex ptb-170 content-center bg-dark text-white'>
+                <Zoom className='vn_item'>
+                        <div className='vn_outer w-4/6'>
+                            <div className='vn_inner'>
+                                <div className='vn_icon_square bg-burnt-orange'></div>
+                                <FontAwesomeIcon className='vn_icon' size='3x' icon={faCalendarAlt}/>
+                                <div className='vn_title'>
+                                    Event Date and Time  
+                                </div>
+                                <div className='vn_description'>
+                                    Nov 20, 2022
+                                    @01:20:00pm 
+                                </div>
+                            </div>
+                        </div>
+                </Zoom>
+                <Zoom className='vn_item'>
+                    <div className='vn_outer'>
+                        <div className='vn_inner'>
+                            <div className='vn_icon_square bg-tangelo'></div>
+                            <FontAwesomeIcon className='vn_icon' size='3x' icon='ticket-alt'/>
+                            <div className='vn_title'>
+                                Event Date and Time  
+                            </div>
+                            <div className='vn_description'>
+                                Nov 20, 2022
+                                @01:20:00pm 
+                            </div>
                         </div>
                     </div>
-            </Zoom>
-            <Zoom className='flex w-1/2 justify-center'>
-                <div className='border-2 w-300 margin-auto p-1'>
-                    somethine 2
-                </div>
-            </Zoom>
+                </Zoom>
         </div>
     )
 }

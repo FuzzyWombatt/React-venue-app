@@ -17,11 +17,9 @@ const Carrousel = () => {
         speed: 400
     }
 
-    const height = window.innerHeight;
-    //console.log(height)
 
     return (
-        <div style={{height: `${height}px`}}>
+        <div style={{height: `${window.innerHeight}px`}}>
            <Slider {...settings}>
                 <img src={grande_1}></img>
                 <img src={grande_2}></img>

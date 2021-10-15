@@ -3,12 +3,10 @@ import Carrousel from './carrousel';
 import Timer from './Timer';
 
 const Featured = () => {
-    const height = window.innerHeight;
-    //console.log(height)
     
     return (
         <div>
-            <div className='relative overflow-hidden' style={{height: `${height}px`}}>
+            <div className='relative overflow-hidden' style={{height: `${window.innerHeight}px`}}>
                 <Carrousel/>
                 <div className='artist_name'>
                     <div className = 'wrapper'>
