@@ -15,7 +15,7 @@ const Timer = () => {
         return(
         <div className='flex flex-row bg-burnt-orange text-white font-roboto'>
             <div className='flex flex-col items-center border-r-2 border-tangelo lh-80'>
-                <div className='mt-3 text-6xl'>{days} </div>
+                <div className='mt-3 text-6xl pl-3 pr-3'>{days} </div>
                 <div className='ml-6 mr-6 mb-3'>Days</div>
             </div>        
             <div className='flex flex-col items-center border-r-2 border-tangelo'>
@@ -35,7 +35,7 @@ const Timer = () => {
     }
     
     useEffect(() => {
-        setInterval(() => setTime(Date.parse('Nov, 20, 2021, 01:20:00') - Date.parse(new Date())), 1000)
+        setInterval(() => setTime(Date.parse('Nov, 20, 2022, 01:20:00') - Date.parse(new Date())), 1000)
     },[])   
 
     return (

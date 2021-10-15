@@ -16,7 +16,10 @@
     .mt-18 {
         margin-top: 4.5rem;
     }
-    .lh-80 {
-        line-height: 25px;
+    .ptb-170 {
+        padding: 170px 0px;
+    }
+    .ease-500{
+        transition: all 500ms ease;
     }
 }

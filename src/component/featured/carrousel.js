@@ -15,15 +15,19 @@ const Carrousel = () => {
         Infinity: true,
         autoplay: true,
         speed: 400
-
     }
-    
+
+    const height = window.innerHeight;
+    //console.log(height)
+
     return (
-           <Slider {...settings} >
-                <img style={{height: `${window.innerHeight}`}} src={grande_1} alt=''></img>
-                <img style={{height: `${window.innerHeight}`}}  src={grande_2} alt=''></img>
-                <img style={{height: `${window.innerHeight}`}} src={grande_3}  alt=''></img>
+        <div style={{height: `${height}px`}}>
+           <Slider {...settings}>
+                <img src={grande_1}></img>
+                <img src={grande_2}></img>
+                <img src={grande_3}></img>
            </Slider>
+        </div>
     );
 }
  export default Carrousel;
