@@ -26,7 +26,7 @@ const VenueNfo = () => {
                     <div className='vn_outer h-full'>
                         <div className='vn_inner h-full'>
                             <div className='vn_icon_square bg-turqoise-900'></div>
-                            <FontAwesomeIcon className='vn_icon' size='3x' icon='ticket-alt'/>
+                            <FontAwesomeIcon className='vn_icon' size='3x' icon='map-marker-alt'/>
                             <div className='vn_title'>
                                     Event Location  
                                 </div>

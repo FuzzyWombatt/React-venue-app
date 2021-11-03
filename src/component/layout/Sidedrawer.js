@@ -18,7 +18,7 @@ const Sidedrawer = () =>{
 
     const renderItems = (item) => {
         return(
-            <ListItem>
+            <ListItem className='bg-turqoise-900'>
                 {item.value}
              </ListItem>
         )
