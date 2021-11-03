@@ -9,8 +9,8 @@ const Featured = () => {
             <div className='relative overflow-hidden' style={{height: `${window.innerHeight}px`}}>
                 <Carrousel/>
                 <div className='artist_name'>
-                    <div className = 'wrapper'>
-                        Ariana Grande
+                    <div className = 'wrapper font-Auto-techno '>
+                        Hatsune Miku
                     </div>
                 </div>
                 <Timer/>

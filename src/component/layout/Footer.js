@@ -12,12 +12,12 @@ const Footer = () => {
           <tbody>
             <tr className='text-center'>
               <td className='text-white text-center font-Righteous font-bold text-3xl'>
-                The venue
+                Vshoujo Idol
               </td>
             </tr>
             <tr>
               <td className='text-white font-roboto text-sm font-bold'>
-                <FontAwesomeIcon color='white' icon={faCopyright}/> The venue 2021 all rights reserved
+                <FontAwesomeIcon color='white' icon={faCopyright}/> Vshoujo Idol 2021 all rights reserved
               </td>
             </tr>
           </tbody>

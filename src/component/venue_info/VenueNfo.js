@@ -10,7 +10,7 @@ const VenueNfo = () => {
                 <Zoom className='vn_item'>
                         <div className='vn_outer w-4/6'>
                             <div className='vn_inner'>
-                                <div className='vn_icon_square bg-burnt-orange'></div>
+                                <div className='vn_icon_square bg-turqoise-300'></div>
                                 <FontAwesomeIcon className='vn_icon' size='3x' icon={faCalendarAlt}/>
                                 <div className='vn_title'>
                                     Event Date and Time  
@@ -25,7 +25,7 @@ const VenueNfo = () => {
                 <Zoom className='vn_item'>
                     <div className='vn_outer'>
                         <div className='vn_inner'>
-                            <div className='vn_icon_square bg-tangelo'></div>
+                            <div className='vn_icon_square bg-turqoise-900'></div>
                             <FontAwesomeIcon className='vn_icon' size='3x' icon='ticket-alt'/>
                             <div className='vn_title'>
                                 Event Date and Time  

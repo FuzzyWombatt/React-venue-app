@@ -12,19 +12,24 @@ module.exports = {
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
-        'Righteous': ['Righteous', 'cursive']
+        'Righteous': ['Righteous', 'cursive'],
+        'Auto-techno': ['Auto-techno', 'Righteous']
       },
       height: {
         '800' : '800px',
         '400' : '400px'
       },
-      backgroundColor: {
+      //use this to do for all colors. much simplier
+      colors: {
+        'dark': '#363636',
         'orange': 'orange',
         'burnt-orange' : '#CC5500',
-        'tangelo' : '#EC7625'
-      },
-      borderColor: {
-        'tangelo': '#EC7625'
+        'tangelo' : '#EC7625',
+        'turqoise-100': '#b3ecec',
+        'turqoise-300': '#89ecda',
+        'turqoise-500': '#43e8d8',
+        'turqoise-700': '#40e0d0',
+        'turqoise-900': '#3bd6c6',
       }
     },
   },

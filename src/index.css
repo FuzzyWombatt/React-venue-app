@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Auto-techno';
+    src: local('Auto-techno'), url('./resources/fonts/auto-techno/auto-techno.ttf') format('truetype');
+};
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
@@ -9,9 +14,6 @@
     .container {
         height: 800px;
         overflow: hidden
-    }
-    .bg-dark {
-        background-color: #363636;
     }
     .mt-18 {
         margin-top: 4.5rem;
@@ -23,8 +25,16 @@
         transition: all 500ms ease;
     }
     .r-45{
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
         transform: rotate(45deg);
     }
+    .r-counter-45 {
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
 }
 
 @layer components {
@@ -32,8 +42,8 @@
         display: flex;
         position: absolute;
         top: 50%;
-        left: 50%;
-        width: 400px;
+        left: 15%;
+        width: 470px;
         height: 160px;
         -webkit-transform: translate(-50%, -50%);  
         transform: translate(-50%, -50%);   
