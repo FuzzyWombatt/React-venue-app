@@ -1,11 +1,29 @@
 import React, {Fragment, useState}  from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Drawer } from '@mui/material';
+import { List, Drawer, ListItem } from '@mui/material';
 
 
 const Sidedrawer = () =>{
     const [over, setOver] = useState(false);
     const [drawerToggle, setToggle] = useState(false);
+
+    const refLinks = [
+        {link: 'featured', value: 'To top'},
+        {link: 'venuenfo', value: 'Venue Nfo'},
+        {link: 'highlights', value: 'Highlights'},
+        {link: 'pricing', value: 'Pricing'},
+        {link: 'location', value: 'Location'},
+
+    ];
+
+    const renderItems = (item) => {
+        return(
+            <ListItem>
+                {item.value}
+             </ListItem>
+        )
+    };
+
 
     return (
        <Fragment>
@@ -24,8 +42,10 @@ const Sidedrawer = () =>{
             className={over ? "text-turqoise-900" : "text-white"}
           />
         </button>
-        <Drawer>
-            
+        <Drawer anchor={'right'} open={drawerToggle} onClose={() => setToggle(false)}>
+            <List component="nav">
+                {refLinks.map((item) => renderItems(item) )}
+            </List>
         </Drawer>
        </Fragment>
     )
