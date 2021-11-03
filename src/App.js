@@ -5,7 +5,10 @@ import { faHeadphonesAlt, faBars, faTicketAlt, faMapMarkerAlt} from '@fortawesom
 import Header from "./component/layout/Header";
 import Featured from "./component/featured/Featured";
 import Footer from "./component/layout/Footer";
-import VenueNfo from './component/venue_info/VenueNfo'
+import VenueNfo from './component/venue_info/VenueNfo';
+
+import Location from './component/location/Location'
+
 //solid icons seem to work the best with this method, regular tend to never show
 library.add(faHeadphonesAlt, faBars, faTicketAlt, faMapMarkerAlt);
 
@@ -15,6 +18,7 @@ const App = () => {
       <Header/>
       <Featured/>
       <VenueNfo/>
+      <Location/>
       <Footer/>
     </div>
   );
