@@ -8,6 +8,8 @@ module.exports = {
         '150' : '150px',
         '300' : '300px',
         '450' : '450px',
+        '700' : '700px',
+        '800' : '800px',
         'min-content' : 'min-content'
       },
       fontFamily: {
@@ -16,8 +18,12 @@ module.exports = {
         'Auto-techno': ['Auto-techno', 'Righteous']
       },
       height: {
+        '1/8' : '12.5%',
+        '150' : '150px',
+        '300' : '300px',
+        '450' : '450px',
+        '700' : '700px',
         '800' : '800px',
-        '400' : '400px'
       },
       //use this to do for all colors. much simplier
       colors: {
