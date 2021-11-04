@@ -19,7 +19,7 @@ const Carrousel = () => {
 
 
     return (
-        <div style={{height: `${window.innerHeight}px`}}>
+        <div style={{height: `${window.innerHeight}px`, maxHeight: 900}}>
            <Slider {...settings}>
                 <img src={miku_1} alt=''></img>
                 <img src={miku_2} alt=''></img>

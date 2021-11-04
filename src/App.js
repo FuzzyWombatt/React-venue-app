@@ -8,7 +8,7 @@ import Featured from "./component/featured/Featured";
 import Footer from "./component/layout/Footer";
 import VenueNfo from './component/venue_info/VenueNfo';
 import Highlights from "./component/highlights/Highlights";
-
+import Pricing from "./component/pricing/Pricing";
 import Location from './component/location/Location'
 
 //solid icons seem to work the best with this method, regular tend to never show and just easier to import in at the component
@@ -29,6 +29,10 @@ const App = () => {
 
       <Element name='highlights'>
         <Highlights/>
+      </Element>
+
+      <Element name='pricing'>
+        <Pricing/>
       </Element>
 
       <Element name='location'>
