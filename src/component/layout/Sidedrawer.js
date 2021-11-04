@@ -1,6 +1,6 @@
 import React, {Fragment, useState}  from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { List, Drawer, ListItem } from '@mui/material';
+import { List, Drawer, ListItemButton } from '@mui/material';
 import { scroller } from 'react-scroll';
 
 
@@ -28,14 +28,14 @@ const Sidedrawer = () =>{
 
     const renderItems = (item) => {
         return(
-            <ListItem className='bg-turqoise-900 text-2xl border-b-2 border-turqoise-100' button onClick={() => goToElement(item.link)}>
-                <div className='flex flex-row text-center text-white  hover:text-turqoise-100'>
+            <ListItemButton className='bg-turqoise-90' onClick={() => goToElement(item.link)} sx={{borderBottom: 2, borderColor: '#b3ecec' }}>
+                <div className='flex flex-row text-center text-white  hover:text-turqoise-100 text-2xl'>
                   <div className='w-54'>
                     <FontAwesomeIcon className='pr-4' size='2x' icon={item.icon}/>
                   </div>
                   <div className='self-center pr-2 font-Equinox-bold'>{item.value}</div>
                 </div>
-             </ListItem>
+             </ListItemButton>
         )
     };
 
