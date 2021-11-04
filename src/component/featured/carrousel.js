@@ -21,9 +21,9 @@ const Carrousel = () => {
     return (
         <div style={{height: `${window.innerHeight}px`}}>
            <Slider {...settings}>
-                <img src={miku_1}></img>
-                <img src={miku_2}></img>
-                <img src={miku_3}></img>
+                <img src={miku_1} alt=''></img>
+                <img src={miku_2} alt=''></img>
+                <img src={miku_3} alt=''></img>
            </Slider>
         </div>
     );

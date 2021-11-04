@@ -15,15 +15,25 @@ module.exports = {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'Righteous': ['Righteous', 'cursive'],
-        'Auto-techno': ['Auto-techno', 'Righteous']
+        'Auto-techno': ['Auto-techno', 'Righteous'],
+        'Equinox-bold': ['Equinox-bold', 'Auto-techno'],
+        'Equinox': ['Equinox', 'Auto-techno']
       },
       height: {
         '1/8' : '12.5%',
         '150' : '150px',
+        '200' : '200px',
+        '250' : '250px',
         '300' : '300px',
+        '350' : '350px',
+        '400' : '400px',
         '450' : '450px',
         '500' : '500px',
+        '550' : '550px',
+        '600' : '600px',
+        '650' : '650px',
         '700' : '700px',
+        '750' : '750px',
         '800' : '800px',
       },
       //use this to do for all colors. much simplier

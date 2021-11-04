@@ -7,6 +7,16 @@
     src: local('Auto-techno'), url('./resources/fonts/auto-techno/auto-techno.ttf') format('truetype');
 };
 
+@font-face {
+    font-family: 'Equinox';
+    src: local('Equinox'), url('./resources/fonts/equinox/Equinox\ Regular.woff') format('woff');
+};
+
+@font-face {
+    font-family: 'Equinox-bold';
+    src: local('Equinox-bold'), url('./resources/fonts/equinox/Equinox\ Bold.woff') format('woff');
+};
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
@@ -43,6 +53,9 @@
     .trans-50 {
         -webkit-transform: translate(-50%, -50%);  
         transform: translate(-50%, -50%);  
+    }
+    .w-54 {
+        width: 54px
     }
     
 }
