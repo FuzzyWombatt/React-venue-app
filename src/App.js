@@ -7,7 +7,7 @@ import Header from "./component/layout/Header";
 import Featured from "./component/featured/Featured";
 import Footer from "./component/layout/Footer";
 import VenueNfo from './component/venue_info/VenueNfo';
-import Highlights from "./component/HIghlights/Highlights";
+import Highlights from "./component/highlights/Highlights";
 
 import Location from './component/location/Location'
 
