@@ -1,6 +1,7 @@
 import React, {Fragment, useState}  from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { List, Drawer, ListItem } from '@mui/material';
+import { scroller } from 'react-scroll';
 
 
 const Sidedrawer = () =>{
@@ -16,10 +17,19 @@ const Sidedrawer = () =>{
 
     ];
 
+    const goToElement = (link) => {
+        scroller.scrollTo(link, {
+          duration: 1250,
+          delay: 100,
+          smooth: true,
+          offset: -150
+        })
+    }
+
     const renderItems = (item) => {
         return(
-            <ListItem className='bg-turqoise-900 text-white text-2xl border-b-2 border-turqoise-100'>
-                <div className='flex flex-row text-center hover:text-turqoise-100'>
+            <ListItem className='bg-turqoise-900 text-2xl border-b-2 border-turqoise-100' button onClick={() => goToElement(item.link)}>
+                <div className='flex flex-row text-center text-white  hover:text-turqoise-100'>
                   <div className='w-54'>
                     <FontAwesomeIcon className='pr-4' size='2x' icon={item.icon}/>
                   </div>

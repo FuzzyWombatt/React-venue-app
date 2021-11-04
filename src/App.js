@@ -1,6 +1,7 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLevelUpAlt, faHeadphonesAlt, faBars, faTicketAlt, faMapMarkerAlt, faDollarSign, faWarehouse} from '@fortawesome/free-solid-svg-icons'
+import { Element } from "react-scroll";
 
 import Header from "./component/layout/Header";
 import Featured from "./component/featured/Featured";
@@ -16,9 +17,19 @@ const App = () => {
   return (
     <div className='flex flex-col'>
       <Header/>
-      <Featured/>
-      <VenueNfo/>
-      <Location/>
+
+      <Element name='featured'>
+        <Featured/>
+      </Element>
+
+      <Element name='venuenfo'>
+        <VenueNfo/>
+      </Element>
+
+      <Element name='location'>
+        <Location/>
+      </Element>
+
       <Footer/>
     </div>
   );
