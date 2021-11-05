@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import UtilButton from "../util/UtilButton";
 
 const Discount = () => {
     const [start, setStart] =  useState(0);
@@ -22,29 +23,36 @@ const Discount = () => {
     },[start])
 
     return (
-    <div className="flex flex-row h-full w-1/2 text-white items-center justify-center mb-24">
+      <div className="flex flex-row h-full w-1/2 text-white items-center justify-center mb-24">
         {/* when it comes into view  it triggers this and then trigger the effect*/}
-      <Fade onVisibilityChange={(inView) => {if(inView){percentage()}}}>
-        <div className="flex flex-col pr-16 pl-4">
-          <span className="text-8xl text-turqoise-100">{start}%</span>
-          <span className="text-4xl">OFF</span>
-        </div>
-      </Fade>
-      <Slide right>
-        <div className="flex flex-col flex-grow">
-          <span className="text-center text-3xl md:text-4xl mb-8">
-            Purchase tickets before 30th JULY
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo
-            quis imperdiet massa tincidunt nunc pulvinar sapien. Sed felis eget
-            velit aliquet.
-          </p>
-        </div>
-      </Slide>
-    </div>
-  );
+        <Fade
+          onVisibilityChange={(inView) => {
+            if (inView) {
+              percentage();
+            }
+          }}
+        >
+          <div className="flex flex-col pr-16 pl-4">
+            <span className="text-8xl text-turqoise-100">{start}%</span>
+            <span className="text-4xl">OFF</span>
+          </div>
+        </Fade>
+        <Slide right>
+          <div className="flex flex-col flex-grow">
+            <span className="text-center text-3xl md:text-4xl mb-8">
+              Purchase tickets before 30th JULY
+            </span>
+            <p style={{marginBottom: '1.5em'}}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Sed
+              felis eget velit aliquet.
+            </p>
+            <UtilButton text='PURCHASE TICKETS' icon='ticket-alt'/>
+          </div>
+        </Slide>
+      </div>
+    );
 };
 
 export default Discount;
