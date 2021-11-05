@@ -6,7 +6,7 @@ import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 
 const VenueNfo = () => {
     return (
-        <div className='flex ptb-170 content-center bg-dark text-white h-700'>
+        <div className='flex ptb-170 content-center bg-dark text-white h-650'>
                 <Zoom className='vn_item'>
                         <div className='vn_outer h-full'>
                             <div className='vn_inner h-full'>

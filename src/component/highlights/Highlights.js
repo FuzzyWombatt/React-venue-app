@@ -4,7 +4,7 @@ import Discount from './Discount'
 
 const Highlights = () => {
     return (
-        <div className='flex flex-col h-750 bg-turqoise-900'>
+        <div className='flex flex-col bg-turqoise-900 items-center'>
             <Description/>
             <Discount/>
         </div>
